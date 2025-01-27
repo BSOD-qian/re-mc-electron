@@ -1,0 +1,44 @@
+{
+  "name": "re-mc",
+  "version": "2.1.1",
+  "description": "Hello.World!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "bbBSODdd",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.3.1",
+    "@electron-forge/maker-deb": "^7.3.1",
+    "@electron-forge/maker-rpm": "^7.3.1",
+    "@electron-forge/maker-squirrel": "^7.3.1",
+    "@electron-forge/maker-zip": "^7.3.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.3.1",
+    "electron": "^29.1.5"
+  },
+  "dependencies": {
+    "@electron-forge/plugin-fuses": "^7.3.1",
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "appVersion": "2.1.1",
+        "icon": "./appicon.ico",
+        "name": "Re地铁计算器",
+        "appCopyright": "bbBSODdd"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+          }
+        }
+      ]
+    }
+  }
+}
