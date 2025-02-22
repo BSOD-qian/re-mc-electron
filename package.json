@@ -1,6 +1,6 @@
 {
   "name": "re-mc",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Hello.World!",
   "main": "main.js",
   "scripts": {
@@ -8,6 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "electron-forge package",
     "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BSOD-qian/re-mc-electron.git"
   },
   "author": "bbBSODdd",
   "license": "MIT",
@@ -22,23 +26,8 @@
   },
   "dependencies": {
     "@electron-forge/plugin-fuses": "^7.3.1",
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "update-electron-app": "^3.1.0"
   },
-  "config": {
-    "forge": {
-      "packagerConfig": {
-        "appVersion": "2.1.1",
-        "icon": "./appicon.ico",
-        "name": "Re地铁计算器",
-        "appCopyright": "bbBSODdd"
-      },
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-          }
-        }
-      ]
-    }
-  }
+  "config": {}
 }

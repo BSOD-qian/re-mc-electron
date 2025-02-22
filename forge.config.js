@@ -4,6 +4,10 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 module.exports = {
   packagerConfig: {
     asar: true,
+      appVersion: "2.2d",
+      icon: "./appicon.ico",
+      name: "Re地铁计算器",
+      appCopyright: "bbBSODdd"
   },
   rebuildConfig: {},
   makers: [
